@@ -1,7 +1,5 @@
 import pandas as pd
 df = pd.read_csv('vnindex.csv', delimiter=';', encoding='utf-8', header=1)
-
-# Rename columns to usable names (Vietnamse has weird column names)
 df.columns = [
     'Date', 'Close', 'Adjusted_close', 'DropMe', 'Volume', 'Trading_Value',
     'Volume_2', 'Trading_Value_2', 'Open', 'High', 'Low'
